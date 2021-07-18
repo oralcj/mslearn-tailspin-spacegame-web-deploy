@@ -121,8 +121,6 @@ stages:
     steps: 
     - task: UseDotNet@2
       displayName: 'Use .NET SDK $(dotnetSdkVersion)'
-      includePreviewVersions: 'true'
-      performMultiLevelLookup: 'true'
       inputs:
         version: '$(dotnetSdkVersion)'
     - task: DotNetCoreCLI@2
